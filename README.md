@@ -1,1 +1,1 @@
-# scripting essentials class
+# ScriptingForGames
