@@ -102,7 +102,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -121,18 +121,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHoldTime: 0.1
-  awakeAction: {fileID: 0}
-  startAction: {fileID: 0}
   awakeEvent:
     m_PersistentCalls:
       m_Calls: []
   startEvent:
     m_PersistentCalls:
       m_Calls: []
-  triggerEnterAction: {fileID: 0}
-  triggerEnterRepeatAction: {fileID: 0}
-  triggerEnterEndAction: {fileID: 0}
-  triggerExitAction: {fileID: 0}
   triggerEnterEvent:
     m_PersistentCalls:
       m_Calls: []
