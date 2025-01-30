@@ -9,6 +9,6 @@ public class SimpleTransformController : MonoBehaviour
         transform.position = p;
 
         transform.Rotate(new Vector3(0, 15, 5) * Time.deltaTime);
-
+        var o = Mathf.PingPong(Time.time, 2); transform.position = new Vector3(o, 0, 0);
     }
 }
