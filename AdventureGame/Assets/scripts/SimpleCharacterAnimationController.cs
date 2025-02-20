@@ -19,19 +19,19 @@ public class SimpleCharacterAnimationController : MonoBehaviour
     {
         if (Input.GetAxis("Horizontal") != 0)
         {
-            animator.SetTrigger("Run");
+            animator.SetTrigger("RunTrigger");
         }
         else
         {
-            animator.SetTrigger("Idle");
+            animator.SetTrigger("IdleTrigger");
         }
         if (Input.GetButtonDown("Jump"))
         {
-            animator.SetTrigger("Jump");
+            animator.SetTrigger("JumpTrigger");
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            animator.SetTrigger("WallJump");
+            animator.SetTrigger("WallJumpTrigger");
         }
     }
 }
