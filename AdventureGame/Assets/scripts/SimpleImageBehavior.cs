@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class SimpleImageBehavior : MonoBehaviour
 {
     private Image imageObj;
-    private SimpleFloatData dataObj;
+    public SimpleFloatData dataObj;
 
     private void Start()
     {
