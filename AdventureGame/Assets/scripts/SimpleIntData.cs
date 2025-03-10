@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class SimpleIntData : MonoBehaviour
@@ -8,8 +9,7 @@ public class SimpleIntData : MonoBehaviour
     {
         value += amount;
     }
-    
-    //SetData ()
+
     public void SetValue(int amount)
     {
         value = amount;
