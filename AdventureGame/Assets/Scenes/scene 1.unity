@@ -453,6 +453,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 454529767}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: CollectTrigger
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 454529765}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: CollectTrigger
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!95 &454529767
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454529765}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 868f7251c984b504095266dbf8cf5cc6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &495457441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,6 +2086,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5308047305642323952, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 454529766}
+    - targetCorrespondingSourceObject: {fileID: 5308047305642323952, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 454529767}
   m_SourcePrefab: {fileID: 100100000, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
