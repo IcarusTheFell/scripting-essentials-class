@@ -740,6 +740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc94e5ce52415fc4e8e2ebf4bed023fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  particleSystem: {fileID: 0}
   particleAmount: 10
 --- !u!199 &454529774
 ParticleSystemRenderer:
@@ -5538,6 +5539,22 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &454529776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454529765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bc6fcd213ceab4baca007f857dc5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstEmissionAmount: 10
+  secondEmissionAmount: 20
+  thirdEmissionAmount: 30
+  delayBetweenEmissions: 0.5
 --- !u!1 &462569968
 GameObject:
   m_ObjectHideFlags: 0
@@ -13011,6 +13028,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5308047305642323952, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 454529773}
+    - targetCorrespondingSourceObject: {fileID: 5308047305642323952, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 454529776}
   m_SourcePrefab: {fileID: 100100000, guid: 299aae72722546343a7c7456e2f4687c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
