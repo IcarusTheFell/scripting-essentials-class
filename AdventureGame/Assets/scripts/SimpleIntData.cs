@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class SimpleIntData : MonoBehaviour
+public class SimpleIntData : ScriptableObject
 {
     public int value;
     
