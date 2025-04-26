@@ -31,7 +31,7 @@ public class SimpleCharacterController1 : MonoBehaviour
         var move = new Vector3(x: moveInput, y: 0f, z: 0f) * (moveSpeed * Time.deltaTime);
         controller.Move(move);
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             velocity.y = Mathf.Sqrt(jumpForce * -2f * gravity);
         }
@@ -39,13 +39,13 @@ public class SimpleCharacterController1 : MonoBehaviour
 
     private void ApplyGravity()
     {
-        if (!controller.isGrounded)
+        if (controller.isGrounded && velocity.y < 0)
         {
-            velocity.y += gravity * Time.deltaTime;
+            velocity.y = -2f; // small downward force to keep grounded
         }
         else
         {
-            velocity.y = 0f; 
+            velocity.y += gravity * Time.deltaTime;
         }
 
         controller.Move(velocity * Time.deltaTime);
