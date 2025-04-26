@@ -5,20 +5,26 @@ using UnityEngine.AI;
 
 public class SimpleNavMeshAgent : MonoBehaviour
 {
-    public Transform target;
+    public Transform[] waypoints;
+    private int currentWaypointIndex;
     private NavMeshAgent agent;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        if (waypoints.Length > 0 )
+        {
+            agent.SetDestination(waypoints[0].position);
+        }
         agent.updateRotation = false;
     }
 
     private void Update()
     {
-        if (target != null)
+        if (!agent.pathPending && agent.remainingDistance <= agent.stoppingDistance && !agent.hasPath)
         {
-            agent.SetDestination(target.position);
+            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
+            agent.SetDestination(waypoints[currentWaypointIndex].position);
         }
     }
 }
